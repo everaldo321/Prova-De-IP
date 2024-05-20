@@ -1,0 +1,5 @@
+8) Escreva um algoritmo que encontre e retorne o maior elemento em uma lista de números. 
+
+lista = [1, 2, 3, 4, 5, 11, 6, 7, 8, 9, 10]
+maoir_numero = max(lista)
+print('o maior numero da lista e',maoir_numero)
