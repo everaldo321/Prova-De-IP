@@ -1,0 +1,14 @@
+16) Escreva um programa que receba duas listas, uma com os valores das notas e outra com os pesos 
+correspondentes, e calcule a média ponderada. 
+
+# Solicitar ao usuário a lista de notas e pesos
+notas = list(map(float, input("Digite as notas separadas por espaço: ").split()))
+pesos = list(map(float, input("Digite os pesos correspondentes separados por espaço: ").split()))
+
+# Verificar se as listas têm o mesmo comprimento
+if len(notas) != len(pesos):
+    print("Erro: As listas de notas e pesos devem ter o mesmo comprimento.")
+else:
+    # Calcular a média ponderada
+    media_ponderada = sum(n * p for n, p in zip(notas, pesos)) / sum(pesos)
+    print("A média ponderada é:", media_ponderada)
