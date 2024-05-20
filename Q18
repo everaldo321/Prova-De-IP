@@ -1,0 +1,19 @@
+18) Crie um programa que receba uma lista de palavras e conte quantas vezes cada vogal aparece no total. 
+
+# Lista de strings
+lista = ['maça', 'pato', 'macaco', 'kaka', 'uva', 'elefante']
+
+# Inicializa um dicionário para contar as vogais
+contagem_vogais = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
+
+# Itera através da lista de strings e dos caracteres de cada string
+for palavra in lista:
+    for char in palavra:
+        # Verifica se o caractere é uma vogal e incrementa a contagem
+        if char in contagem_vogais:
+            contagem_vogais[char] += 1
+
+# Imprime a contagem de cada vogal
+print("Contagem de vogais:")
+for vogal, contagem in contagem_vogais.items():
+    print(f"{vogal}: {contagem}")
