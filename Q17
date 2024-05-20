@@ -1,0 +1,6 @@
+17) Desenvolva um programa que remova todos os elementos ímpares de uma lista e imprima a lista 
+resultante.
+
+lista = [2, 1, 7, 6, 3, 4, 5, 8]
+lista_inpar = [num for num in lista if num % 2 != 0]
+print(lista_inpar)
