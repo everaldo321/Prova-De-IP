@@ -1,0 +1,21 @@
+3) Escreva um código que imprimirá uma matriz de um tamanho digitado pelo usuário.
+
+
+import random
+
+# Solicita ao usuário o tamanho da matriz
+tamanho = int(input("Digite o tamanho da matriz: "))
+
+# Gera a matriz e calcula a soma dos elementos
+matriz = [[random.randint(1, 9) for _ in range(tamanho)] for _ in range(tamanho)]
+soma = sum(sum(linha) for linha in matriz)
+
+# Imprime a matriz
+print("Matriz:")
+for linha in matriz:
+    print(linha)
+
+# Imprime a soma e a média dos números
+total_numeros = tamanho * tamanho
+print("Soma de todos os números:", soma)
+print("Média dos números:", soma / total_numeros)
