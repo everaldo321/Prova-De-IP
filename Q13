@@ -1,0 +1,10 @@
+13) Ordenação: Escreva um programa que ordene uma lista de números em ordem crescente ou 
+decrescente, dependendo do argumento passado para a função.
+
+numeros = [3, 1, 4, 1, 5, 9, 2, 6, 5]
+
+ordem = 'decrescente'
+
+numeros_ordenados = sorted(numeros) if ordem == 'crescente' else sorted(numeros, reverse=True)
+
+print(numeros_ordenados)
