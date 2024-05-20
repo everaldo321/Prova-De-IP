@@ -1,0 +1,9 @@
+19) Escreva um programa que ordene uma lista de números de forma que os números pares fiquem antes 
+dos números ímpares, mantendo a ordem original dentro de cada grupo.
+
+numeros = [2, 1, 7, 6, 3, 4, 5, 8]
+
+# Função de ordenação personalizada: números pares antes dos ímpares
+numeros_ordenados = sorted(numeros, key=lambda x: (x % 2, x))
+
+print(numeros_ordenados)
