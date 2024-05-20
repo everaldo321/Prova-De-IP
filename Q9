@@ -1,0 +1,5 @@
+9) Média dos Elementos: Desenvolva um algoritmo que calcule e retorne a média dos elementos de uma 
+lista de números.
+
+numeros = [1, 2, 3, 4, 5]
+print(sum(numeros) / len(numeros))
