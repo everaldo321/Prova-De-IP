@@ -1,0 +1,12 @@
+22) Escreva um programa que receba uma tupla e conte quantos elementos únicos ela possui.
+
+lift1 = ('macaco', 'paca', 'jabuti', 'onça')
+lift2 = ('macaco', 'pato', 'anta', 'paca')
+
+lista_combinada_sem_duplicatas = []
+for item in lift1 + lift2:
+    if item not in lift1 or item not in lift2:
+        lista_combinada_sem_duplicatas.append(item)
+
+num_elementos_unicos = len(set(lista_combinada_sem_duplicatas))
+print('a lista possui', num_elementos_unicos, 'elementos unicos')
