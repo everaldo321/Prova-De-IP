@@ -1,0 +1,5 @@
+23) Desenvolva um programa que inverta uma tupla. 
+
+tupla1 = (1, 2, 3, 4, 5)
+tupla_invertida = tuple(reversed(tupla1))
+print(tupla_invertida)
